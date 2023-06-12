@@ -30,8 +30,8 @@ const CreateGpt = async (req, res) => {
   try {
     const mymessage = await GPT.find({ userId });
     text = mymessage.map((item) => item.user).toString();
-  } catch (err) {
-    console.log(err);
+  } catch (er) {
+    console.log(er);
   }
 
   openai
