@@ -25,6 +25,4 @@ const openai = new OpenAIApi(
 app.set("gpt", openai);
 
 app.use("/api/gpt", GPT);
-app.listen(5000, () => {
-  console.log("server running");
-});
+app.listen(process.env.PORT);
